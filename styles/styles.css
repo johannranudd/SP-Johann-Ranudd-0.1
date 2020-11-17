@@ -1,0 +1,84 @@
+/* core styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+    font-size: 10px;
+} */
+
+ul {
+    list-style-type: none;
+}
+
+/* header */
+
+/* nav-bar */
+.nav-bar {
+  background: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 70px;
+  color: white;
+}
+
+.nav-bar div {
+  display: flex;
+  align-items: center;
+}
+
+/* menu */
+#hamburger {
+  grid-column: 3;
+}
+
+/* logo */
+.logo {
+  max-width: 50px;
+  margin-left: 8%;
+}
+
+.logo-text {
+  white-space: nowrap;
+}
+
+/* menu */
+
+.menu {
+    transform: translateX(-1000px);
+    transition: .3s;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background: #ccc;
+    padding-top: 50px;
+}
+
+.menu li {
+    width: 100%;
+    height: 10%;
+    padding-bottom: 5px;
+}
+
+.show-menu {
+    transform: translateX(0px);
+}
+
+.menu a {
+    display: inline-block;
+    padding: 20px 0 5px 50px;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    border-bottom:  1px solid transparent;
+    transition: .5s;
+}
+
+.menu a:hover {
+    background: rgb(163, 162, 162);
+    border-bottom: 1px solid grey;
+}

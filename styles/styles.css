@@ -1,8 +1,19 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 /* core styles */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+    --logo-font:"Goldman", cursive;
+    --header-font: 'Open Sans', sans-serif;
 }
 
 html {
@@ -11,6 +22,13 @@ html {
 
 ul {
   list-style-type: none;
+}
+
+h1 {
+    font-family: var(--header-font);
+}
+a {
+    font-family: var(--header-font);
 }
 
 /* header */
@@ -46,6 +64,7 @@ ul {
 
 .logo-text {
   white-space: nowrap;
+  font-family: var(--logo-font)
 }
 
 /* menu */
@@ -79,6 +98,12 @@ ul {
   background: rgb(163, 162, 162);
   border-bottom: 1px solid grey;
   color: white;
+}
+
+@media (max-width: 900px){
+    .menu a {
+        padding: 0 10px;
+    }
 }
 
 @media (min-width: 799px) {
@@ -184,14 +209,14 @@ ul {
 }
 
 @media (min-width: 500px) {
-    .top-section h1 {
-        margin-bottom: -1px;
-      }
+  .top-section h1 {
+    margin-bottom: -1px;
+  }
 }
 @media (min-width: 550px) {
-    .top-section h1 {
-        margin-bottom: -2px;
-      }
+  .top-section h1 {
+    margin-bottom: -2px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -213,13 +238,13 @@ ul {
 }
 
 @media (min-width: 1430px) {
-    .nav-bar {
-        justify-content: space-between;
-        padding: 0 200px;
-    }
-    .menu {
-        width: 20vw;
-    }
+  .nav-bar {
+    justify-content: space-between;
+    padding: 0 200px;
+  }
+  .menu {
+    width: 20vw;
+  }
 }
 
 /* !main */

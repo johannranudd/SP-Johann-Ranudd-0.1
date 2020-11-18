@@ -1,39 +1,47 @@
-/* fonts */
+/* !fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-/* core styles */
+/* !core styles */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+body {
+  background: var(--bg-color);
+}
 :root {
-    --logo-font:"Goldman", cursive;
-    --header-font: 'Open Sans', sans-serif;
+  --logo-font: "Goldman", cursive;
+  --header-font: "Open Sans", sans-serif;
+  --p-height: 2.4rem;
+  --p-font-size: 16px; 
+  --bg-color: #F7F4F4;
 }
 
 html {
   font-size: 10px;
 }
-
 ul {
   list-style-type: none;
 }
 
 h1 {
-    font-family: var(--header-font);
+  font-family: var(--header-font);
 }
 a {
-    font-family: var(--header-font);
+  font-family: var(--header-font);
+}
+p {
+  line-height: var(--p-height);
+  font-size: var(--p-font-size); 
 }
 
-/* header */
+/* !header */
 
-/* nav-bar */
+/* !nav-bar */
 .nav-bar {
   background: black;
   display: grid;
@@ -64,7 +72,8 @@ a {
 
 .logo-text {
   white-space: nowrap;
-  font-family: var(--logo-font)
+  font-family: var(--logo-font);
+  font-size: 1.5rem;
 }
 
 /* menu */
@@ -100,10 +109,17 @@ a {
   color: white;
 }
 
-@media (max-width: 900px){
-    .menu a {
-        padding: 0 10px;
-    }
+/* !media */
+@media (max-width: 900px) {
+  .menu a {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-text {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 799px) {
@@ -146,7 +162,7 @@ a {
   }
 }
 
-/* top-section */
+/* !top-section */
 
 .top-section {
   height: 450px;
@@ -173,13 +189,32 @@ a {
   display: flex;
   align-items: center;
   cursor: pointer;
+  z-index: 1;
 }
 
 .fa-angle-down {
   font-size: 2.5rem;
 }
 
-/* media */
+/* !media */
+
+@media (max-width: 500px) {
+  .fa-angle-down {
+    font-size: 2rem;
+  }
+  .top-section button {
+    font-size: 1.2rem;
+  }
+  .top-section h1 {
+    margin-bottom: -4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .top-section h1 {
+    margin-bottom: -2px;
+  }
+}
 
 @media (min-width: 798px) {
   .top-section {
@@ -211,6 +246,13 @@ a {
 @media (min-width: 500px) {
   .top-section h1 {
     margin-bottom: -1px;
+  }
+  .fa-angle-down {
+    font-size: 2rem;
+  }
+  .top-section button {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
   }
 }
 @media (min-width: 550px) {
@@ -249,6 +291,85 @@ a {
 
 /* !main */
 
-main {
-  height: 1000px;
+/* Dropdown section */
+
+/* hidden section */
+.hidden-section {
+  transform: translateY(-1500px);
+  transition: .5s;
+  opacity: 0;
+  z-index: 0;
+  background: #ccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
+
+.hidden-section h2 {
+  text-align: center;
+  padding-bottom: 20px; 
+}
+
+.hidden-section p {
+  text-align: left;
+  width: 80%;
+  margin: auto;
+}
+
+/* when toggled, this class will be added */
+.show-section {
+  transform: translateY(-250px);
+  opacity: 1;
+}
+
+#closeBtn {
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  padding-top: 20px;
+  width: 15%;
+  margin: auto;
+  white-space: nowrap;
+}
+
+/* !main content */
+
+main {
+  background: var(--bg-color);
+}
+.main-home-page {
+  transform: translateY(-0px);
+}
+
+.main-home-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+.circle-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  margin: 40px 20px 0 20px;
+}
+
+.circle a {
+  font-size: 3rem;
+}
+
+.fa-lightbulb,
+.fa-shopping-bag {
+  /* margin-top: 40px; */
+}
+
+
+/* !media */
+
+/* !footer */

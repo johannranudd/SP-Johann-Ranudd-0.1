@@ -11,14 +11,14 @@ const dropBtn = document.querySelector("#dropBtn");
 const hiddenSection = document.querySelector(".hidden-section");
 
 
-dropBtn.addEventListener("click", function () {
-    hiddenSection.classList.toggle('show-section');
+dropBtn.addEventListener("click", function SlideFunction() {
+  hiddenSection.classList.toggle("show-section");
 });
 
 // closeBtn
 
-const closeBtn = document.querySelector('#closeBtn');
+const closeBtn = document.querySelector("#closeBtn");
 
-closeBtn.addEventListener('click', function () {
-  hiddenSection.classList.toggle('show-section');
-})
+closeBtn.addEventListener("click", function () {
+  hiddenSection.classList.toggle("show-section");
+});

@@ -17,12 +17,13 @@
   </head>
   <body>
     <header>
+      <!-- nav-bar -->
       <nav class="nav-bar">
         <div>
           <img class="logo" src="./img/logo-negative.png" alt="Logo" />
           <p class="logo-text">Community Science Museum</p>
         </div>
-
+        <!-- menu -->
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="explore.html">Explore</a></li>
@@ -32,6 +33,7 @@
         </ul>
         <a id="hamburger"><i class="fa fa-bars"></i></a>
       </nav>
+      <!-- section with main background image -->
       <section class="top-section">
         <h1>
           Community <br />
@@ -42,62 +44,111 @@
         </button>
       </section>
     </header>
-    
+<!-- keep it on the bottom for optimal z-index value -->
+<section class="hidden-section">
+  <h2>“Explore together”</h2>
+  <p>
+    Come join us at the Community Science Museum where we’re committed to
+    making science accessible to all. Over the course of human history,
+    science has developed from our early understanding of fire, wind, water,
+    and earth to exploring everything from galaxies far away to the very
+    building blocks of life itself. The aim of our museum is to create a
+    space where everyone can experience the wonders of our discoveries and
+    perhaps even ignite a lifelong passion to continue the exploration of
+    the world around us. We believe science should not be confined to the
+    textbook, but brought to live through exhibits. This is why we have over
+    1000 different exhibits on the many varied subjects of science to
+    explore. Many of these exhibits are designed for you to interact with
+    and play around to see science come to life (apart from the dinosaur
+    exhibits – they only come to life at night when everyone’s gone home).
+  </p>
+  <button id="closeBtn">close&nbsp;<i class="fas fa-angle-up"></i></button>
+</section>
     <!-- main -->
     <main class="main-home-page">
       <div class="container">
+        <!-- right-card -->
         <div class="right-circle-card">
-          <div class="circle-card">
-            <div class="circle">
-              <a href="explore.html"><i class="fas fa-globe"></i></a>
-            </div>
+          <div class="circle-wrapper">
+            <a href="explore.html" class="circle-card circle-1">
+              <div class="circle">
+                <i class="fas fa-globe"></i>
+              </div>
+            </a>
             <p>Explore</p>
           </div>
-          <div class="circle-card">
-            <div class="circle">
-              <a href="explore.html"><i class="far fa-lightbulb"></i></a>
-            </div>
-            <p>Explore</p>
+          <div class="circle-wrapper">
+            <a href="explore.html" class="circle-card circle-2">
+              <div class="circle">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+            </a>
+            <p>Program</p>
           </div>
         </div>
+        <!-- left-cardd -->
         <div class="left-circle-card">
-          <div class="circle-card">
-            <div class="circle">
-              <a href="explore.html"><i class="fas fa-ticket-alt"></i></a>
-            </div>
-            <p>Explore</p>
+          <div class="circle-wrapper">
+            <a href="explore.html" class="circle-card circle-3">
+              <div class="circle">
+                <i class="fas fa-ticket-alt"></i>
+              </div>
+            </a>
+            <p>Visit</p>
           </div>
-          <div class="circle-card">
-            <div class="circle">
-              <a href="explore.html"><i class="fas fa-shopping-bag"></i></a>
-            </div>
-            <p>Explore</p>
+          <div class="circle-wrapper">
+            <a href="explore.html" class="circle-card circle-4">
+              <div class="circle">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+            </a>
+            <p>Shop</p>
           </div>
         </div>
-        </div>
+      </div>
     </main>
-
-    <!-- keep it on the bottom for optimal z-index value -->
-    <section class="hidden-section">
-      <h2>“Explore together”</h2>
+    <!-- article section -->
+    <div class="article-section">
+      <figure>
+        <div class="image-wrapper-1"></div>
+        <figcaption>
+          <p>Visiting Professor of Aeronautics</p>
+          <a href="#">Learn More<i class="fas fa-angle-down"></i></a>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="image-wrapper-2"></div>
+        <figcaption>
+          <p>Spend a night in the museum with the dinosaurs</p>
+          <a href="#">Learn More<i class="fas fa-angle-down"></i></a>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="image-wrapper-3"></div>
+        <figcaption>
+          <p>Energica Exhibition on Loan</p>
+          <a href="#">Learn More<i class="fas fa-angle-down"></i></a>
+        </figcaption>
+      </figure>
+      <figure>
+        <div>
+          <div class="image-wrapper-4"></div>
+        </div>
+        <figcaption>
+          <p>Interested in learning about science?</p>
+          <a href="#">Learn More<i class="fas fa-angle-down"></i></a>
+        </figcaption>
+      </figure>
+    </div>
+    
+    
+    <footer>
       <p>
-        Come join us at the Community Science Museum where
-        we’re committed to making science accessible to all. Over the course of
-        human history, science has developed from our early understanding of
-        fire, wind, water, and earth to exploring everything from galaxies far
-        away to the very building blocks of life itself. The aim of our museum
-        is to create a space where everyone can experience the wonders of our
-        discoveries and perhaps even ignite a lifelong passion to continue the
-        exploration of the world around us. We believe science should not be
-        confined to the textbook, but brought to live through exhibits. This is
-        why we have over 1000 different exhibits on the many varied subjects of
-        science to explore. Many of these exhibits are designed for you to
-        interact with and play around to see science come to life (apart from
-        the dinosaur exhibits – they only come to life at night when everyone’s
-        gone home).
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aperiam
+        repudiandae laudantium ipsam quisquam, officia facere. Atque, veritatis
+        suscipit! Explicabo!
       </p>
-      <button id="closeBtn">close&nbsp;<i class="fas fa-angle-up"></i></button>
-    </section>
+    </footer>
     <!-- JavaScript -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"

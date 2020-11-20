@@ -20,7 +20,7 @@
   /* font-size */
   --header-font-size: 30px;
   --sub-header-font-size: 20px;
-  --p-font-size: 16px;
+  --p-font-size: 14px;
   /* line-height */
   --p-height: 2.4rem;
   /* color */
@@ -65,6 +65,13 @@ label {
 }
 img {
   max-width: 100%;
+}
+/* main */
+main h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: var(--header-font-size);
+  color: var(--blue);
 }
 /* !header */
 
@@ -657,4 +664,65 @@ footer form input[type="submit"]:hover {
   .social {
     margin-right: 0px;
   }
+}
+
+/* !Explore page */
+
+/* background image */
+.explore-img-section {
+  background: url("../img/inside-museum-resized.jpg") no-repeat center
+    center/cover;
+  height: 300px;
+}
+
+/* explore article section */
+.explore-section-1 {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.explore-section-1 article {
+  margin: 50px 0;
+}
+
+.explore-section-1 article:nth-child(1) {
+  margin-top: 15px;
+}
+
+.explore-section-1 img {
+  margin-top: 30px;
+  width: 160px;
+  float: right;
+}
+
+.explore-section-1 span {
+  font-weight: bold;
+}
+
+/* explore section 2 */
+
+.explore-section-2 {
+  height: 200px;
+  color: white;
+  
+}
+
+.explore-section-2 span {
+  font-weight: bold;
+}
+
+
+.explore-section-2 article {
+  padding: 20px;
+  background: var(--bg-black);
+  width: 90%;
+  margin: auto;
+  max-width: 700px;
+}
+
+.explore-section-2 img {
+  margin-top: 30px;
+  width: 200px;
+  float: right;
 }

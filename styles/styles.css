@@ -59,6 +59,10 @@ figcaption p {
   font-weight: bold;
   font-size: var(--sub-header-font-size);
 }
+label {
+  font-family: var(--p-font);
+  color: var(--bg-black);
+}
 img {
   max-width: 100%;
 }
@@ -508,10 +512,11 @@ img {
   }
   .article-section figcaption {
     padding: 0 10px 10px 10px;
-    height: 83px;
+    height: 73px;
   }
   .article-section figcaption p {
     font-size: 14px;
+    line-height: 2rem;
   }
   .article-section figcaption a {
     margin: 0;
@@ -551,6 +556,9 @@ footer a {
   color: var(--blue);
 }
 
+footer label {
+  font-size: 1.4rem;
+}
 /* main components */
 
 footer .container {

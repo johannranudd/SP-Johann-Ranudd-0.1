@@ -3,6 +3,7 @@ const menu = document.querySelector(".menu");
 
 hamburger.addEventListener("click", function showMenu() {
   menu.classList.toggle("show-menu");
+  console.log(menu);
 });
 
 // dropBtn

@@ -447,6 +447,7 @@ main h1 {
   background: var(--bg-black);
   width: 95%;
   margin: auto;
+  padding: 10px 0 50px 0;
 }
 
 .article-section figure {
@@ -569,6 +570,9 @@ footer .container {
   width: 70%;
   max-width: 300px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer .container > div,
@@ -578,11 +582,9 @@ form {
 
 .opening-hours-footer {
   max-width: 250px;
+  margin-left: 20px;
 }
 /* more spesiffic to each div */
-.social {
-  text-align: center;
-}
 
 .social > div {
   display: flex;
@@ -621,7 +623,7 @@ footer form input[type="submit"]:hover {
 /* back to top */
 
 .back-to-top {
-  padding: 20px;
+  padding: 10px;
 }
 .back-to-top a {
   display: flex;
@@ -647,6 +649,10 @@ footer form input[type="submit"]:hover {
   .contact-footer {
     margin-right: 20px;
   }
+  .opening-hours-footer {
+    margin-left: 0px;
+  }
+  
 }
 
 @media (min-width: 760px) {
@@ -662,12 +668,6 @@ footer form input[type="submit"]:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-  }
-  .contact-footer {
-    margin-right: 0px;
-  }
-  .social {
-    margin-right: 0px;
   }
 }
 

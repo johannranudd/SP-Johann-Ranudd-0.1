@@ -10,7 +10,6 @@ hamburger.addEventListener("click", function showMenu() {
 const dropBtn = document.querySelector("#dropBtn");
 const hiddenSection = document.querySelector(".hidden-section");
 
-
 dropBtn.addEventListener("click", function SlideFunction() {
   hiddenSection.classList.toggle("show-section");
 });

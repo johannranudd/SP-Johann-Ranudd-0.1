@@ -588,7 +588,7 @@ form {
 
 .opening-hours-footer {
   max-width: 250px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 /* more spesiffic to each div */
 
@@ -658,7 +658,9 @@ footer form input[type="submit"]:hover {
   .opening-hours-footer {
     margin-left: 0px;
   }
-  
+  .social {
+    margin-right: 20px;
+  }
 }
 
 @media (min-width: 760px) {
@@ -674,6 +676,9 @@ footer form input[type="submit"]:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+  }
+  .social {
+    margin-right: 0px;
   }
 }
 

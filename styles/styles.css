@@ -501,6 +501,12 @@ main h1 {
 
 /* !media aricle section */
 
+@media (max-width: 370px){
+  .article-section figcaption p {
+    font-size: 1.6rem;
+  }
+}
+
 @media (min-width: 760px) {
   .article-section {
     width: 80%;

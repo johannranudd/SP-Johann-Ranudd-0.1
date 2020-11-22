@@ -810,14 +810,24 @@ footer form input[type="submit"]:hover {
   float: right;
 }
 
+/* explore section 5 */
 
-
-
-
-
-
-
-
+.explore-section-5 span{
+  font-weight: bold;
+}
+.explore-section-5{
+  width: 80%;
+  max-width: 660px;
+  margin: auto;
+}
+.explore-section-5 article {
+  margin: 50px 0;
+}
+.explore-section-5 img {
+  margin-top: 20px;
+  max-width: 170px;
+  float: right;
+}
 
 /* !media */
 
@@ -833,5 +843,8 @@ footer form input[type="submit"]:hover {
   }
   .explore-section-4 article {
     padding: 20px 20px 50px 20px;
+  }
+  .explore-section-5 img {
+    max-width: 200px;
   }
 }

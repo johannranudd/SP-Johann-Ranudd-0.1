@@ -946,7 +946,7 @@ footer form input[type="submit"]:hover {
   height: 300px;
 }
 
-.program-section-1{
+.program-section-1 {
   width: 95%;
   margin: auto;
   max-width: 800px;
@@ -991,7 +991,7 @@ footer form input[type="submit"]:hover {
   margin-top: 20px;
 }
 
-.program-section-2 article:nth-child(2){
+.program-section-2 article:nth-child(2) {
   margin-top: 50px;
 }
 
@@ -1006,9 +1006,125 @@ footer form input[type="submit"]:hover {
   .program-section-2 img {
     max-width: 200px;
     margin: 0;
-    
   }
   .article-section-3-img {
     max-height: 113px;
   }
+  .program-section-1 h1 {
+    margin-bottom: 40px;
+  }
 }
+
+/* !SHOP PAGE */
+
+.shop-img-section-top {
+  background: url("../img/exhibition-1920.jpg") no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.shop-img-section-top p {
+  font-weight: bold;
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  background: rgba(255, 255, 255, 0.349);
+}
+
+/* article */
+
+.shop-section-1 {
+  width: 84%;
+  margin: auto;
+  max-width: 670px;
+}
+
+.shop-section-1 article:nth-child(2) {
+  margin: 40px 0;
+}
+
+/* images */
+.shop-image-wrapper-1 {
+  background: url("../img/rubics-cube-600.jpeg") no-repeat center center/cover;
+  height: 200px;
+}
+.shop-image-wrapper-2 {
+  background: url("../img/chemistry-600.jpg") no-repeat center center/cover;
+  height: 200px;
+}
+.shop-image-wrapper-3 {
+  background: url("../img/lego.jpg") no-repeat center center/cover;
+  height: 200px;
+}
+.shop-image-wrapper-4 {
+  background: url("../img/puzzle-600.jpeg") no-repeat center center/cover;
+  height: 200px;
+}
+.shop-image-wrapper-5 {
+  background: url("../img/evolution-shirt-600.jpg") no-repeat center center/cover;
+  height: 200px;
+}
+.shop-image-wrapper-6 {
+  background: url("../img/gift-card-600.jpeg") no-repeat center center/cover;
+  height: 200px;
+}
+
+.shop-img-section-1 {
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.shop-img-section-1 figure {
+  max-width: 300px;
+  max-height: 200px;
+  width: 100%;
+  margin: 80px auto;
+}
+
+.shop-img-section-1 figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 15px 10px 15px; */
+  height: 50px;
+  box-shadow: 0 10px 16px -6px var(--bg-black);
+}
+
+.shop-img-section-1 figcaption p {
+  font-size: 2rem;
+}
+
+/* !media */
+
+@media (min-width: 760px) {
+  .shop-img-section-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 1rem;
+    max-width: 750px;
+  }
+  .shop-img-section-1 figure {
+    margin: 40px 0px;
+  }
+  .shop-img-section-1 figcaption p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .shop-img-section-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    max-width: 1000px;
+  }
+  .shop-img-section-1 figcaption p {
+    font-size: 2.2rem;
+  }
+}
+

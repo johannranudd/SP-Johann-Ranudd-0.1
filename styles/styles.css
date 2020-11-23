@@ -874,3 +874,73 @@ footer form input[type="submit"]:hover {
     center/cover;
   height: 300px;
 }
+
+/* sections */
+.visit-section-1,
+.visit-section-2 {
+  width: 95%;
+  max-width: 670px;
+  margin: auto;
+}
+
+/* articles */
+
+.visit-section-1 article,
+.visit-section-2 article {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.visit-section-1 h1,
+.visit-section-2 h1 {
+  margin-bottom: -20px;
+}
+
+/* section-1 */
+
+.visit-section-1 a{
+ font-size: 1.3rem;
+ color: var(--blue);
+}
+
+.visit-section-1 span {
+  font-weight: bold;
+}
+
+/* table */
+.hours-table {
+  border: 2px solid var(--bg-black);
+  padding: 15px 0;
+  width: 95%!important;
+}
+
+.hours-table h2 {
+  text-align: center;
+}
+
+
+.hours-table table {
+  width: 70%;
+  margin: auto;
+}
+
+.hours-table table th {
+  font-weight: normal;
+  font-family: var(--p-font);
+  font-size: var(--p-font-size);
+}
+
+.hours-table table tr {
+  display: flex;
+  justify-content: space-between;
+}
+/* section-2 */
+
+.visit-section-2 {
+  background: #ccc;
+  border: 1px solid var(--bg-black);
+  margin-top: 40px;
+  padding-bottom: 25px;
+}
+

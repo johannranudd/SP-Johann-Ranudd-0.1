@@ -46,6 +46,9 @@ ul {
 h1 {
   font-family: var(--header-font);
 }
+h2 {
+  font-family: var(--header-font);
+}
 a {
   font-family: var(--header-font);
 }
@@ -735,12 +738,12 @@ footer form input[type="submit"]:hover {
 }
 
 .explore-section-1 img {
-  margin-top: 30px;
+  margin-top: 5px;
   max-width: 130px;
   float: right;
 }
 
-.explore-section-1 span {
+.explore-section-1 h2 {
   font-weight: bold;
 }
 
@@ -751,7 +754,14 @@ footer form input[type="submit"]:hover {
   margin: 50px 0;
 }
 
-.explore-section-2 span{
+.header-exhibition-spaces {
+  text-align: center;
+  padding: 20px;
+  font-size: var(--header-font-size);
+  color: var(--blue);
+}
+
+.explore-section-2 h2{
   font-weight: bold;
 }
 
@@ -765,16 +775,17 @@ footer form input[type="submit"]:hover {
 }
 
 .explore-section-2 img {
-  margin-top: 30px;
+  margin-top: 35px;
   max-width: 130px;
   float: right;
 }
 
 
 /* explore section 3*/
-.explore-section-3 span{
+.explore-section-3 h2{
   font-weight: bold;
 }
+
 .explore-section-3{
   width: 80%;
   max-width: 660px;
@@ -782,7 +793,7 @@ footer form input[type="submit"]:hover {
 }
 
 .explore-section-3 img {
-  margin-top: 20px;
+  margin-top: 35px;
   max-width: 130px;
   float: right;
 }
@@ -792,7 +803,7 @@ footer form input[type="submit"]:hover {
   margin: 50px 0 -10px 0;
 }
 
-.explore-section-4 span{
+.explore-section-4 h2{
   font-weight: bold;
 }
 
@@ -806,13 +817,14 @@ footer form input[type="submit"]:hover {
 
 
 .explore-section-4 img {
+  margin-top: 33px;
   max-width: 130px;
   float: right;
 }
 
 /* explore section 5 */
 
-.explore-section-5 span{
+.explore-section-5 h2{
   font-weight: bold;
 }
 .explore-section-5{
@@ -824,12 +836,18 @@ footer form input[type="submit"]:hover {
   margin: 50px 0;
 }
 .explore-section-5 img {
-  margin-top: 20px;
+  margin-top: 35px;
   max-width: 170px;
   float: right;
 }
 
 /* !media */
+
+@media (min-width: 600px) {
+  .explore-section-4 img {
+    margin-top: 10px;
+  }
+}
 
 @media (min-width: 760px) {
   .explore-section-1 img,
@@ -839,7 +857,7 @@ footer form input[type="submit"]:hover {
     max-width: 150px;
   }
   .explore-section-4 img {
-    margin-top: -5px;
+    margin-top: 0px;
   }
   .explore-section-4 article {
     padding: 20px 20px 50px 20px;

@@ -153,7 +153,7 @@ main h1 {
   height: 370px;
 }
 
-@media (min-width: 798px){
+@media (min-width: 798px) {
   /* reset the menu height */
   .menu-other-pages-height {
     height: 0px;
@@ -517,26 +517,25 @@ main h1 {
 
 /* !media aricle section */
 
-@media (max-width: 370px){
+@media (max-width: 370px) {
   .article-section figcaption p {
     font-size: 1.6rem;
   }
 }
 
-@media (max-width: 350px){
+@media (max-width: 350px) {
   .article-section figcaption p {
     font-size: 1.4rem;
     line-height: 1.6rem;
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
   .article-section figcaption p {
     font-size: 1.6rem;
     line-height: 2rem;
   }
 }
-
 
 @media (min-width: 760px) {
   .article-section {
@@ -723,13 +722,13 @@ footer form input[type="submit"]:hover {
 }
 
 /* explore article section */
-.explore-section-1{
+.explore-section-1 {
   width: 80%;
   max-width: 660px;
   margin: auto;
 }
 
-.explore-section-1 article{
+.explore-section-1 article {
   margin: 50px 0;
 }
 
@@ -761,10 +760,9 @@ footer form input[type="submit"]:hover {
   color: var(--blue);
 }
 
-.explore-section-2 h2{
+.explore-section-2 h2 {
   font-weight: bold;
 }
-
 
 .explore-section-2 article {
   padding: 20px;
@@ -780,13 +778,12 @@ footer form input[type="submit"]:hover {
   float: right;
 }
 
-
 /* explore section 3*/
-.explore-section-3 h2{
+.explore-section-3 h2 {
   font-weight: bold;
 }
 
-.explore-section-3{
+.explore-section-3 {
   width: 80%;
   max-width: 660px;
   margin: auto;
@@ -803,18 +800,17 @@ footer form input[type="submit"]:hover {
   margin: 50px 0 -10px 0;
 }
 
-.explore-section-4 h2{
+.explore-section-4 h2 {
   font-weight: bold;
 }
 
-.explore-section-4 article{
+.explore-section-4 article {
   padding: 30px 20px 40px 20px;
   background: var(--bg-black);
   width: 85%;
   margin: auto;
   max-width: 700px;
 }
-
 
 .explore-section-4 img {
   margin-top: 33px;
@@ -824,10 +820,10 @@ footer form input[type="submit"]:hover {
 
 /* explore section 5 */
 
-.explore-section-5 h2{
+.explore-section-5 h2 {
   font-weight: bold;
 }
-.explore-section-5{
+.explore-section-5 {
   width: 80%;
   max-width: 660px;
   margin: auto;
@@ -899,9 +895,9 @@ footer form input[type="submit"]:hover {
 
 /* section-1 */
 
-.visit-section-1 a{
- font-size: 1.3rem;
- color: var(--blue);
+.visit-section-1 a {
+  font-size: 1.3rem;
+  color: var(--blue);
 }
 
 .visit-section-1 span {
@@ -912,13 +908,12 @@ footer form input[type="submit"]:hover {
 .hours-table {
   border: 2px solid var(--bg-black);
   padding: 15px 0;
-  width: 95%!important;
+  width: 95% !important;
 }
 
 .hours-table h2 {
   text-align: center;
 }
-
 
 .hours-table table {
   width: 70%;
@@ -944,3 +939,76 @@ footer form input[type="submit"]:hover {
   padding-bottom: 25px;
 }
 
+/* !PROGRAM PAGE */
+
+.program-img-section {
+  background: url("../img/science-img1.jpg") no-repeat center center/cover;
+  height: 300px;
+}
+
+.program-section-1{
+  width: 95%;
+  margin: auto;
+  max-width: 800px;
+}
+
+.program-section-2 {
+  width: 95%;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.program-section-1 article,
+.program-section-2 article {
+  width: 100%;
+  margin: auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.program-section-1 h2,
+.program-section-2 h2 {
+  margin: 10px 0;
+}
+
+.program-section-1 p,
+.program-section-2 p {
+  margin: 10px 0;
+}
+
+.program-section-1 img,
+.program-section-2 img {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 400px;
+}
+/* section 2 */
+
+.program-section-2 {
+  background: var(--bg-black);
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.program-section-2 article:nth-child(2){
+  margin-top: 50px;
+}
+
+/* !media */
+
+@media (min-width: 564px) {
+  .program-section-1 p,
+  .program-section-2 p {
+    display: flex;
+  }
+  .program-section-1 img,
+  .program-section-2 img {
+    max-width: 200px;
+    margin: 0;
+    
+  }
+  .article-section-3-img {
+    max-height: 113px;
+  }
+}
